@@ -1,0 +1,2789 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database')" href="#testTable">
+<li>TC05_SQMD_MeterDataFile_ChekDuplicateData_Database</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-04-06T09:31:04Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-04-06T09:32:49Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC05_SQMD_MeterDataFile_ChekDuplicateData_Database</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:21</p>
+</td><td class="cell1Css"><a href="SS/18040615012174160.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Verifying for Meter data file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link is showing on screen</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:27</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Click on the file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link click done successfully</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:27</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickBrowserBtn</p>
+</td><td class="cell1Css">
+<p>Clicking on Browse button</p>
+</td><td class="cell1Css">
+<p>Browser button click done successfully</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:27</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickBrowserBtn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Uploading file</p>
+</td><td class="cell1Css">
+<p style="color: green;">File java.awt.datatransfer.StringSelection@56a4479a uploaded successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:38</p>
+</td><td class="cell1Css"><a href="SS/18040615013825675.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p>Verifying no. of rows in excel</p>
+</td><td class="cell1Css">
+<p>No. of rows in uploaded Excel are:2</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:38</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeVersionQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:45</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p>Verifying Save Button</p>
+</td><td class="cell1Css">
+<p>After Meter data file upload, Save button is showing on screen</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking save button enabling</p>
+</td><td class="cell1Css">
+<p style="color: green;">After Meter data file upload, Save button is enabled on screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:50</p>
+</td><td class="cell1Css"><a href="SS/18040615015076791.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p>Clicking on save button</p>
+</td><td class="cell1Css">
+<p>After Meter data file upload, Save button click done successfully</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:55</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeVersionQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:56</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">12</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> SaveAndValidateVersionNum</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DB version num</p>
+</td><td class="cell1Css">
+<p style="color: green;">Version num is increased from 33 to 34</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:56</p>
+</td><td class="cell1Css"><a href="SS/18040615015681054.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p>Verifying no. of rows in excel</p>
+</td><td class="cell1Css">
+<p>No. of rows in uploaded Excel are:2</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:56</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 7 column, Values are same when comparing with DB218.91 :: 218.91</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:57</p>
+</td><td class="cell1Css"><a href="SS/18040615015791123.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">16</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:57</p>
+</td><td class="cell1Css"><a href="SS/18040615015755708.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:58</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 8 column, Values are same when comparing with DB213.24 :: 213.24</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:58</p>
+</td><td class="cell1Css"><a href="SS/18040615015832316.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:58</p>
+</td><td class="cell1Css"><a href="SS/18040615015896679.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:01:59</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 9 column, Values are same when comparing with DB654.18 :: 654.18</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:59</p>
+</td><td class="cell1Css"><a href="SS/18040615015959712.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">22</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:01:59</p>
+</td><td class="cell1Css"><a href="SS/18040615015926619.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:00</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 10 column, Values are same when comparing with DB112.98 :: 112.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:00</p>
+</td><td class="cell1Css"><a href="SS/18040615020053445.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">25</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:00</p>
+</td><td class="cell1Css"><a href="SS/18040615020095814.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:01</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 11 column, Values are same when comparing with DB110.12 :: 110.12</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:01</p>
+</td><td class="cell1Css"><a href="SS/18040615020173325.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">28</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:01</p>
+</td><td class="cell1Css"><a href="SS/1804061502019027.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:02</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 12 column, Values are same when comparing with DB180.98 :: 180.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:02</p>
+</td><td class="cell1Css"><a href="SS/18040615020260484.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">31</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:02</p>
+</td><td class="cell1Css"><a href="SS/18040615020283515.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:03</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">33</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 13 column, Values are same when comparing with DB130.78 :: 130.78</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:03</p>
+</td><td class="cell1Css"><a href="SS/1804061502038369.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">34</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:03</p>
+</td><td class="cell1Css"><a href="SS/18040615020393392.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:04</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 14 column, Values are same when comparing with DB161.89 :: 161.89</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:04</p>
+</td><td class="cell1Css"><a href="SS/18040615020497695.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">37</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:04</p>
+</td><td class="cell1Css"><a href="SS/18040615020499789.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:04</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">39</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 15 column, Values are same when comparing with DB134.54 :: 134.54</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:04</p>
+</td><td class="cell1Css"><a href="SS/18040615020434958.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">40</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:05</p>
+</td><td class="cell1Css"><a href="SS/18040615020521305.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:05</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">42</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 16 column, Values are same when comparing with DB123.89 :: 123.89</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:06</p>
+</td><td class="cell1Css"><a href="SS/18040615020666474.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">43</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:06</p>
+</td><td class="cell1Css"><a href="SS/18040615020679952.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">45</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 17 column, Values are same when comparing with DB191.78 :: 191.78</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:07</p>
+</td><td class="cell1Css"><a href="SS/18040615020783450.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">46</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:07</p>
+</td><td class="cell1Css"><a href="SS/18040615020715369.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:08</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">48</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 18 column, Values are same when comparing with DB112.23 :: 112.23</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:08</p>
+</td><td class="cell1Css"><a href="SS/18040615020828309.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">49</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:08</p>
+</td><td class="cell1Css"><a href="SS/18040615020897501.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:09</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">51</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 19 column, Values are same when comparing with DB114.56 :: 114.56</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:09</p>
+</td><td class="cell1Css"><a href="SS/18040615020922593.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">52</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:10</p>
+</td><td class="cell1Css"><a href="SS/18040615021043103.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:10</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">54</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 20 column, Values are same when comparing with DB127.87 :: 127.87</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:10</p>
+</td><td class="cell1Css"><a href="SS/18040615021081810.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">55</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:11</p>
+</td><td class="cell1Css"><a href="SS/18040615021120996.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>56</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:12</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">57</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 21 column, Values are same when comparing with DB145.78 :: 145.78</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:12</p>
+</td><td class="cell1Css"><a href="SS/18040615021259972.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">58</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:12</p>
+</td><td class="cell1Css"><a href="SS/18040615021238649.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>59</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:13</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">60</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 22 column, Values are same when comparing with DB121.81 :: 121.81</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:13</p>
+</td><td class="cell1Css"><a href="SS/18040615021389948.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">61</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:13</p>
+</td><td class="cell1Css"><a href="SS/18040615021352782.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>62</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:14</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">63</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 23 column, Values are same when comparing with DB111.98 :: 111.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:14</p>
+</td><td class="cell1Css"><a href="SS/18040615021440497.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">64</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:14</p>
+</td><td class="cell1Css"><a href="SS/18040615021473990.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>65</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:15</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">66</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 24 column, Values are same when comparing with DB127.18 :: 127.18</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:15</p>
+</td><td class="cell1Css"><a href="SS/18040615021543376.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">67</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:15</p>
+</td><td class="cell1Css"><a href="SS/18040615021519454.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>68</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:16</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">69</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 25 column, Values are same when comparing with DB151.45 :: 151.45</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:16</p>
+</td><td class="cell1Css"><a href="SS/1804061502163565.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">70</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:17</p>
+</td><td class="cell1Css"><a href="SS/18040615021797412.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>71</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:18</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">72</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 26 column, Values are same when comparing with DB123.42 :: 123.42</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:18</p>
+</td><td class="cell1Css"><a href="SS/18040615021833291.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">73</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:18</p>
+</td><td class="cell1Css"><a href="SS/18040615021846891.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>74</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:19</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">75</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 27 column, Values are same when comparing with DB111.19 :: 111.19</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:19</p>
+</td><td class="cell1Css"><a href="SS/18040615021985983.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">76</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:19</p>
+</td><td class="cell1Css"><a href="SS/18040615021952521.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>77</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:20</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">78</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 28 column, Values are same when comparing with DB121.89 :: 121.89</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:20</p>
+</td><td class="cell1Css"><a href="SS/18040615022032790.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">79</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:20</p>
+</td><td class="cell1Css"><a href="SS/18040615022040949.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>80</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:21</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">81</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 29 column, Values are same when comparing with DB121.98 :: 121.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:21</p>
+</td><td class="cell1Css"><a href="SS/18040615022165729.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">82</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:21</p>
+</td><td class="cell1Css"><a href="SS/18040615022185679.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>83</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:22</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">84</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 row - 30 column, Values are same when comparing with DB118.98 :: 118.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:22</p>
+</td><td class="cell1Css"><a href="SS/18040615022245825.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">85</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:23</p>
+</td><td class="cell1Css"><a href="SS/18040615022341508.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>86</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:24</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">87</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 7 column, Values are same when comparing with DB212.91 :: 212.91</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:24</p>
+</td><td class="cell1Css"><a href="SS/18040615022423545.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">88</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:24</p>
+</td><td class="cell1Css"><a href="SS/1804061502247841.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>89</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:25</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">90</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 8 column, Values are same when comparing with DB213.24 :: 213.24</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:25</p>
+</td><td class="cell1Css"><a href="SS/18040615022513061.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">91</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:25</p>
+</td><td class="cell1Css"><a href="SS/18040615022592295.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>92</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:26</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">93</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 9 column, Values are same when comparing with DB654.18 :: 654.18</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:26</p>
+</td><td class="cell1Css"><a href="SS/18040615022698174.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">94</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:26</p>
+</td><td class="cell1Css"><a href="SS/18040615022646873.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>95</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:27</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">96</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 10 column, Values are same when comparing with DB112.98 :: 112.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:27</p>
+</td><td class="cell1Css"><a href="SS/1804061502278667.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">97</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:27</p>
+</td><td class="cell1Css"><a href="SS/18040615022725386.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>98</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:28</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">99</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 11 column, Values are same when comparing with DB109.12 :: 109.12</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:28</p>
+</td><td class="cell1Css"><a href="SS/18040615022894004.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">100</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:28</p>
+</td><td class="cell1Css"><a href="SS/18040615022883310.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>101</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:28</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">102</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 12 column, Values are same when comparing with DB180.98 :: 180.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:28</p>
+</td><td class="cell1Css"><a href="SS/18040615022826048.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">103</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:29</p>
+</td><td class="cell1Css"><a href="SS/1804061502293792.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>104</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:29</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">105</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 13 column, Values are same when comparing with DB130.78 :: 130.78</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:29</p>
+</td><td class="cell1Css"><a href="SS/18040615022989022.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">106</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:30</p>
+</td><td class="cell1Css"><a href="SS/18040615023052783.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>107</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">108</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 14 column, Values are same when comparing with DB161.89 :: 161.89</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:30</p>
+</td><td class="cell1Css"><a href="SS/18040615023092602.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">109</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:31</p>
+</td><td class="cell1Css"><a href="SS/18040615023123315.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>110</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:31</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">111</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 15 column, Values are same when comparing with DB134.54 :: 134.54</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:31</p>
+</td><td class="cell1Css"><a href="SS/18040615023157860.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">112</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:31</p>
+</td><td class="cell1Css"><a href="SS/18040615023173449.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>113</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:32</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">114</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 16 column, Values are same when comparing with DB123.89 :: 123.89</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:32</p>
+</td><td class="cell1Css"><a href="SS/18040615023217822.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">115</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:32</p>
+</td><td class="cell1Css"><a href="SS/18040615023274357.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>116</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:33</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">117</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 17 column, Values are same when comparing with DB191.78 :: 191.78</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:33</p>
+</td><td class="cell1Css"><a href="SS/18040615023351825.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">118</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:33</p>
+</td><td class="cell1Css"><a href="SS/18040615023362440.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>119</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:34</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">120</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 18 column, Values are same when comparing with DB112.23 :: 112.23</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:34</p>
+</td><td class="cell1Css"><a href="SS/18040615023427082.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">121</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:34</p>
+</td><td class="cell1Css"><a href="SS/18040615023465669.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>122</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">123</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 19 column, Values are same when comparing with DB114.56 :: 114.56</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:35</p>
+</td><td class="cell1Css"><a href="SS/18040615023529008.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">124</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:35</p>
+</td><td class="cell1Css"><a href="SS/18040615023582946.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>125</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:36</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">126</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 20 column, Values are same when comparing with DB127.87 :: 127.87</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:36</p>
+</td><td class="cell1Css"><a href="SS/18040615023698344.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">127</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:36</p>
+</td><td class="cell1Css"><a href="SS/18040615023625180.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>128</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:37</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">129</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 21 column, Values are same when comparing with DB145.78 :: 145.78</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:37</p>
+</td><td class="cell1Css"><a href="SS/18040615023752494.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">130</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:37</p>
+</td><td class="cell1Css"><a href="SS/18040615023728801.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>131</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:37</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">132</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 22 column, Values are same when comparing with DB121.81 :: 121.81</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:37</p>
+</td><td class="cell1Css"><a href="SS/18040615023791738.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">133</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:38</p>
+</td><td class="cell1Css"><a href="SS/18040615023834878.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>134</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:38</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">135</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 23 column, Values are same when comparing with DB111.98 :: 111.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:38</p>
+</td><td class="cell1Css"><a href="SS/18040615023832488.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">136</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:39</p>
+</td><td class="cell1Css"><a href="SS/18040615023912420.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>137</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:39</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">138</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 24 column, Values are same when comparing with DB127.18 :: 127.18</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:39</p>
+</td><td class="cell1Css"><a href="SS/18040615023985876.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">139</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:40</p>
+</td><td class="cell1Css"><a href="SS/18040615024079759.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>140</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:41</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">141</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 25 column, Values are same when comparing with DB151.45 :: 151.45</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:41</p>
+</td><td class="cell1Css"><a href="SS/18040615024127373.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">142</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:41</p>
+</td><td class="cell1Css"><a href="SS/18040615024166186.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>143</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:42</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">144</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 26 column, Values are same when comparing with DB123.42 :: 123.42</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:42</p>
+</td><td class="cell1Css"><a href="SS/18040615024211256.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">145</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:42</p>
+</td><td class="cell1Css"><a href="SS/18040615024213969.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>146</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:43</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">147</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 27 column, Values are same when comparing with DB111.19 :: 111.19</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:43</p>
+</td><td class="cell1Css"><a href="SS/18040615024337303.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">148</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:43</p>
+</td><td class="cell1Css"><a href="SS/18040615024338563.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>149</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:44</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">150</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 28 column, Values are same when comparing with DB121.89 :: 121.89</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:44</p>
+</td><td class="cell1Css"><a href="SS/18040615024441569.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">151</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:44</p>
+</td><td class="cell1Css"><a href="SS/18040615024434382.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>152</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:45</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">153</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 29 column, Values are same when comparing with DB121.98 :: 121.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:45</p>
+</td><td class="cell1Css"><a href="SS/18040615024584562.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">154</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:46</p>
+</td><td class="cell1Css"><a href="SS/18040615024662866.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p>155</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> executeSelectQuery</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Select query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>06-Apr,18 15:02:46</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">156</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying hour value with database</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row - 30 column, Values are same when comparing with DB118.98 :: 118.98</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:46</p>
+</td><td class="cell1Css"><a href="SS/18040615024665396.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC05_SQMD_MeterDataFile_ChekDuplicateData_Database">
+<td class="cell1Css">
+<p style="color: green;">157</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckDataInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking DB testing status</p>
+</td><td class="cell1Css">
+<p style="color: green;">DataBase values checking done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">06-Apr,18 15:02:47</p>
+</td><td class="cell1Css"><a href="SS/18040615024759167.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

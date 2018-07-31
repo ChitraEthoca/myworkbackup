@@ -1,0 +1,733 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative')" href="#testTable">
+<li>TC02_SQMD_MeterDataFileUploadWithNegative</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-01-16T12:32:13Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-01-16T12:33:48Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC02_SQMD_MeterDataFileUploadWithNegative</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Verifying for Meter data file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:02:38</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Click on the file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link click done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:02:39</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ValidateMsgForExcelFormatWrongData</p>
+</td><td class="cell1Css">
+<p>Clicking on browse button</p>
+</td><td class="cell1Css">
+<p>Click on browse button done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:02:39</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateMsgForExcelFormatWrongData</p>
+</td><td class="cell1Css">
+<p style="color: green;">Uploading file</p>
+</td><td class="cell1Css">
+<p style="color: green;">File java.awt.datatransfer.StringSelection@5827af16 uploaded successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:02:55</p>
+</td><td class="cell1Css"><a href="SS/1801161802557057.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateMsgForExcelFormatWrongData</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking success msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">After file uploading, wrong message showing successfully as: Cannot validate the meter data file. Please contact SQMD System Support.</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:02:56</p>
+</td><td class="cell1Css"><a href="SS/18011618025650635.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ValidateMsgForDiffFileFormat</p>
+</td><td class="cell1Css">
+<p>Clicking on browse button</p>
+</td><td class="cell1Css">
+<p>Click on browse button done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:02:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateMsgForDiffFileFormat</p>
+</td><td class="cell1Css">
+<p style="color: green;">Uploading file</p>
+</td><td class="cell1Css">
+<p style="color: green;">File java.awt.datatransfer.StringSelection@c260bdc uploaded successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:13</p>
+</td><td class="cell1Css"><a href="SS/1801161803131361.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateMsgForDiffFileFormat</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking success msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">After uploading wrong file format, wrong message showing correctly as: Meter data file is not in an Excel file format.</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:13</p>
+</td><td class="cell1Css"><a href="SS/18011618031350042.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> UploadWrongDataFile</p>
+</td><td class="cell1Css">
+<p style="color: green;">Uploading file</p>
+</td><td class="cell1Css">
+<p style="color: green;">File java.awt.datatransfer.StringSelection@4f071df8 uploaded successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:30</p>
+</td><td class="cell1Css"><a href="SS/18011618033032753.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying voltage level column</p>
+</td><td class="cell1Css">
+<p style="color: green;">1 row, Voltage level column contains either P or S or T</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:31</p>
+</td><td class="cell1Css"><a href="SS/18011618033145275.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">12</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying validation msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 row voltage level column, Wrong value error msg is showing as Invalid Voltage Level</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:32</p>
+</td><td class="cell1Css"><a href="SS/18011618033298917.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">13</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying validation msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 3 row voltage level column, Wrong value error msg is showing as Invalid Voltage Level</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:33</p>
+</td><td class="cell1Css"><a href="SS/18011618033368325.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying voltage level column</p>
+</td><td class="cell1Css">
+<p style="color: green;">4 row, Voltage level column contains either P or S or T</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:33</p>
+</td><td class="cell1Css"><a href="SS/18011618033364126.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying voltage level column</p>
+</td><td class="cell1Css">
+<p style="color: green;">5 row, Voltage level column contains either P or S or T</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:34</p>
+</td><td class="cell1Css"><a href="SS/18011618033496078.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">16</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying validation msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 6 row voltage level column, Wrong value error msg is showing as Invalid Voltage Level</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:34</p>
+</td><td class="cell1Css"><a href="SS/18011618033496479.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying voltage level column</p>
+</td><td class="cell1Css">
+<p style="color: green;">7 row, Voltage level column contains either P or S or T</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:35</p>
+</td><td class="cell1Css"><a href="SS/18011618033559274.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateVoltageLevelColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying voltage level column</p>
+</td><td class="cell1Css">
+<p style="color: green;">8 row, Voltage level column contains either P or S or T</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:35</p>
+</td><td class="cell1Css"><a href="SS/18011618033548679.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying source name value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 record, Source Name column value for Adjustment Indicator 'N' is: WAPA</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:36</p>
+</td><td class="cell1Css"><a href="SS/1801161803369743.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying source name value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 record, Source Name column value for Adjustment Indicator 'N' is: WAPA</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:36</p>
+</td><td class="cell1Css"><a href="SS/18011618033684598.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying background color</p>
+</td><td class="cell1Css">
+<p style="color: green;">In 3 record Source Name Value column, Wrong value w12 background color is showing as #ff0000</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:37</p>
+</td><td class="cell1Css"><a href="SS/18011618033735864.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">22</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying validation msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 3 record Source name column, Wrong value w12 error msg is showing as Invalid Third Party Source Name</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:38</p>
+</td><td class="cell1Css"><a href="SS/18011618033852859.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying background color</p>
+</td><td class="cell1Css">
+<p style="color: green;">In 4 record Adjustment Indicator Value column, Wrong value 'o' background color is showing as #ff0000</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:38</p>
+</td><td class="cell1Css"><a href="SS/18011618033815279.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying validation msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 4 record adjustment indicator, Wrong value 'o' error msg is showing as Invalid Adjustment Indicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:38</p>
+</td><td class="cell1Css"><a href="SS/18011618033838480.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">25</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying source name value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For Adjustment indicator 'Y', Source name column can contains any value</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:39</p>
+</td><td class="cell1Css"><a href="SS/18011618033921694.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying source name value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For Adjustment indicator 'Y', Source name column can contains any value</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:40</p>
+</td><td class="cell1Css"><a href="SS/18011618034048464.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying source name value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 7 record, Source Name column value for Adjustment Indicator 'N' is: CRD</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:40</p>
+</td><td class="cell1Css"><a href="SS/18011618034052797.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">28</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSourceNameAndAdjustIndicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying source name value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 8 record, Source Name column value for Adjustment Indicator 'N' is: CRD</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:41</p>
+</td><td class="cell1Css"><a href="SS/18011618034165917.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">29</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 1 record other than CRD source name, DLAP value is showing as: DLAP_PGAE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:41</p>
+</td><td class="cell1Css"><a href="SS/18011618034119759.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 2 record other than CRD source name, DLAP value is showing as: DLAP_PGAE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:42</p>
+</td><td class="cell1Css"><a href="SS/18011618034246436.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">31</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 3 record other than CRD source name, DLAP value is showing as: DLAP_PGAE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:42</p>
+</td><td class="cell1Css"><a href="SS/18011618034247020.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">32</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying background color</p>
+</td><td class="cell1Css">
+<p style="color: green;">In DLAP Value column, 4 cell showing Wrong value background color is showing as #ff0000</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:43</p>
+</td><td class="cell1Css"><a href="SS/18011618034390874.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">33</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying validation msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 4 record DLAP column, Wrong value error msg is showing as Invalid DLAP</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:43</p>
+</td><td class="cell1Css"><a href="SS/18011618034345708.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">34</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 5 record other than CRD source name, DLAP value is showing as: DLAP_PGAE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:44</p>
+</td><td class="cell1Css"><a href="SS/18011618034445615.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">35</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 6 record other than CRD source name, DLAP value is showing as: DLAP_PGAE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:44</p>
+</td><td class="cell1Css"><a href="SS/18011618034463699.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 7 record CRD source name, DLAP value is showing as: DLAP_SCE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:45</p>
+</td><td class="cell1Css"><a href="SS/18011618034577642.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC02_SQMD_MeterDataFileUploadWithNegative">
+<td class="cell1Css">
+<p style="color: green;">37</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateDLAPColumn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verifying DLAP value</p>
+</td><td class="cell1Css">
+<p style="color: green;">For 8 record CRD source name, DLAP value is showing as: DLAP_SCE_PCG2</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:03:46</p>
+</td><td class="cell1Css"><a href="SS/18011618034665835.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

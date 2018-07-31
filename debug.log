@@ -1,0 +1,43 @@
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1201/191253.310:ERROR:exception_snapshot_win.cc(87)] thread ID 6404 not found in process
+[1201/191253.310:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0406/145304.085:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0406/145304.302:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.308:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.310:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.313:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.315:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.317:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.320:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.323:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.325:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.328:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.333:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.335:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.338:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.340:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.342:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0406/145304.345:ERROR:exception_snapshot_win.cc(88)] thread ID 4608 not found in process
+[0406/145304.348:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0406/145304.350:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0614/123034.605:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0614/123034.829:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0614/123034.829:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0614/123034.845:ERROR:exception_snapshot_win.cc(88)] thread ID 7580 not found in process
+[0614/123034.845:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0615/094511.274:ERROR:process_reader_win.cc(182)] ResumeThread: The operation completed successfully. (0x0)
+[0615/094511.525:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0615/094511.528:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0615/094511.531:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0615/094511.534:ERROR:process_reader_win.cc(242)] ReadMemory at 0x9d2d6c0 of 16 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0615/094511.537:ERROR:exception_snapshot_win.cc(182)] EXCEPTION_POINTERS read failed
+[0615/094511.540:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0701/115955.915:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0701/115956.056:ERROR:exception_snapshot_win.cc(88)] thread ID 8048 not found in process
+[0701/115956.059:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

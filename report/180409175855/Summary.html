@@ -1,0 +1,750 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation')" href="#testTable">
+<li>SQMD_SRP_248_AdjustedDLFLoadValueCalculation</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-04-09T12:28:57Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-04-09T12:30:02Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://deitappiiswc001:8010/SQMD</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 17:59:28</p>
+</td><td class="cell1Css"><a href="SS/18040917592835966.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getUserName</p>
+</td><td class="cell1Css">
+<p style="color: green;">get UserName</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully read the User Name: B6SJ</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 17:59:30</p>
+</td><td class="cell1Css"><a href="SS/180409175930317.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Verifying for Meter data file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 17:59:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Click on the file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link click done successfully</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 17:59:36</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickBrowserBtn</p>
+</td><td class="cell1Css">
+<p>Clicking on Browse button</p>
+</td><td class="cell1Css">
+<p>Browser button click done successfully</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 17:59:36</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickBrowserBtn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Uploading file</p>
+</td><td class="cell1Css">
+<p style="color: green;">File java.awt.datatransfer.StringSelection@b78a709 uploaded successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 17:59:46</p>
+</td><td class="cell1Css"><a href="SS/18040917594640260.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p>Verifying Save Button</p>
+</td><td class="cell1Css">
+<p>After Meter data file upload, Save button is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 17:59:52</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking save button enabling</p>
+</td><td class="cell1Css">
+<p style="color: green;">After Meter data file upload, Save button is enabled on screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 17:59:52</p>
+</td><td class="cell1Css"><a href="SS/18040917595277699.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p>Clicking on save button</p>
+</td><td class="cell1Css">
+<p>After Meter data file upload, Save button click done successfully</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 17:59:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getVersionNumber</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>Verify getVersionNumber methods starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 17:59:58</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getVersionNumber</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>Verify getVersionNumber methods ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>DLFcomparison methods starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 251.9862</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 247.6617</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">16</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 229.5551</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 238.0717</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 245.0452</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 291.5647</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 319.8395</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 327.8014</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">22</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 334.7266</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 337.7107</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 363.6046</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">25</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 387.3268</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 386.1172</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 404.3042</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">28</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 421.979</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">29</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 424.4725</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 422.4528</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">31</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 450.1291</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">32</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 441.5886</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">33</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 444.1371</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">34</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 415.7858</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">35</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 349.6595</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 301.8203</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p style="color: green;">37</p>
+</td><td class="cell1Css">
+<p style="color: green;">SelectQuery</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validate DLF_ADJ_LD_VAL value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Successfully validated DLF_ADJ_LD_VAL value: 269.9195</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p style="color: green;">PASS</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_248_AdjustedDLFLoadValueCalculation">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> DLFLoadValueCalculation</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>DLFcomparison methods ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 18:00:00</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

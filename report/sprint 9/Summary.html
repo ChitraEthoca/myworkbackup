@@ -1,0 +1,1016 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc')" href="#testTable">
+<li>SQMD_SRP318_HistoryTabDisplayInDesc</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter')" href="#testTable">
+<li style="color : red;">SQMD_SRP318_NegativeTradeDateAndHistoryFilter</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">2</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-01-29T14:28:35Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-01-29T14:32:07Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:40</p>
+</td><td class="cell1Css"><a href="SS/18012919594084762.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">3</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:49</p>
+</td><td class="cell1Css"><a href="SS/18012919594980670.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:58</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:06</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:00:14</p>
+</td><td class="cell1Css"><a href="SS/18012920001472393.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DataInTablePresentOrNot</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>DataInTablePresentOrNot method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DataInTablePresentOrNot</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data is present in table</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:00:23</p>
+</td><td class="cell1Css"><a href="SS/1801292000239198.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DataInTablePresentOrNot</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>DataInTablePresentOrNot method Ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:00:40</p>
+</td><td class="cell1Css"><a href="SS/1801292000402558.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 3859</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>History Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:00:57</p>
+</td><td class="cell1Css"><a href="SS/1801292000573708.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method Ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ApplyFSHistoryFilter method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:00:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>From date Set in Filter</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:01:22</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>To date Set in Filter</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:01:38</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Apply Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:01:47</p>
+</td><td class="cell1Css"><a href="SS/18012920014787632.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>From Date Successfully set as:11/10/2017</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:01:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>To Date Successfully set as:01/21/2018</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:01:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">29</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Dispaly Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">Displaying History according to user date range</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:01:47</p>
+</td><td class="cell1Css"><a href="SS/18012920014799388.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ApplyFSHistoryFilter method ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:01:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>findRecordwithSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 20:01:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">32</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: green;">set text</p>
+</td><td class="cell1Css">
+<p style="color: green;">value entered in search box</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 20:01:56</p>
+</td><td class="cell1Css"><a href="SS/18012920015687031.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: red;">33</p>
+</td><td class="cell1Css">
+<p style="color: red;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: red;"> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: red;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: red;">Data is not present in Table</p>
+</td><td class="cell1Css">
+<p style="color: red;">29-Jan,18 20:02:04</p>
+</td><td class="cell1Css"><a href="SS/18012920020418553.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: red;">34</p>
+</td><td class="cell1Css">
+<p style="color: red;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: red;"> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: red;">Click</p>
+</td><td class="cell1Css">
+<p style="color: red;">Failed to search record with given submit Id</p>
+</td><td class="cell1Css">
+<p style="color: red;">29-Jan,18 20:02:05</p>
+</td><td class="cell1Css"><a href="SS/18012920020574775.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_NegativeTradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: red;">35</p>
+</td><td class="cell1Css">
+<p style="color: red;">SQMD_SRP318_NegativeTradeDateAndHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: red;"> VerifyNegativeTradeDateAndApplyHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: red;">Execution</p>
+</td><td class="cell1Css">
+<p style="color: red;">Error in execution</p>
+</td><td class="cell1Css">
+<p style="color: red;">29-Jan,18 20:02:05</p>
+</td><td class="cell1Css"><a href="SS/18012920020545344.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:58:51</p>
+</td><td class="cell1Css"><a href="SS/18012919585191156.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:58:52</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p style="color: green;">3</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:01</p>
+</td><td class="cell1Css"><a href="SS/18012919590116930.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:01</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:01</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>History Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p style="color: green;">7</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:09</p>
+</td><td class="cell1Css"><a href="SS/18012919590923873.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method Ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:10</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>DefaultFilterDate method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:10</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Default Filter</p>
+</td><td class="cell1Css">
+<p>Default Filter FromDate:12/30/2017</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:18</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Default filter</p>
+</td><td class="cell1Css">
+<p>Default Filter of To Date:01/29/2018 And contains Present Date</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:18</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p style="color: green;">12</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter with present date is Present To Date:01/29/2018</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:18</p>
+</td><td class="cell1Css"><a href="SS/18012919591825546.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p style="color: green;">13</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter of One Month with present date is Present FromDate:12/30/2017To Date:01/29/2018</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:19</p>
+</td><td class="cell1Css"><a href="SS/18012919591916118.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>DefaultFilterDate method ends</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> compareDateToVerifyDescendingOrder</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>compareDateToVerifyDescendingOrder method starts</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> compareDateToVerifyDescendingOrder</p>
+</td><td class="cell1Css">
+<p>Get Table Length</p>
+</td><td class="cell1Css">
+<p>Fetching the total table Length</p>
+</td><td class="cell1Css">
+<p>29-Jan,18 19:59:27</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_HistoryTabDisplayInDesc">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> compareDateToVerifyDescendingOrder</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Table exist in descending order</p>
+</td><td class="cell1Css">
+<p style="color: green;">29-Jan,18 19:59:30</p>
+</td><td class="cell1Css"><a href="SS/18012919593036289.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

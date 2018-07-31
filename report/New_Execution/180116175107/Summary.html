@@ -1,0 +1,940 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload')" href="#testTable">
+<li style="color : red;">TC01_SQMD_MeterDataFileUpload</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-01-16T12:21:10Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-01-16T12:22:58Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC01_SQMD_MeterDataFileUpload</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Verifying for Meter data file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:51:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickFileUploadLink</p>
+</td><td class="cell1Css">
+<p>Click on the file upload link</p>
+</td><td class="cell1Css">
+<p>Meter data file upload link click done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:51:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickBrowserBtn</p>
+</td><td class="cell1Css">
+<p>Clicking on Browse button</p>
+</td><td class="cell1Css">
+<p>Browser button click done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:51:36</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickBrowserBtn</p>
+</td><td class="cell1Css">
+<p style="color: green;">Uploading file</p>
+</td><td class="cell1Css">
+<p style="color: green;">File java.awt.datatransfer.StringSelection@f79a760 uploaded successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:51:52</p>
+</td><td class="cell1Css"><a href="SS/18011617515289539.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 1 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">1 header value is: Source Name</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:01</p>
+</td><td class="cell1Css"><a href="SS/18011617520193790.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">7</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 2 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">2 header value is: DLAP</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:02</p>
+</td><td class="cell1Css"><a href="SS/18011617520288933.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 3 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">3 header value is: Voltage
+Level</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:02</p>
+</td><td class="cell1Css"><a href="SS/18011617520220319.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 4 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">4 header value is: Adjustment
+Indicator</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:02</p>
+</td><td class="cell1Css"><a href="SS/1801161752025695.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 5 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">5 header value is: Trade Date</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:03</p>
+</td><td class="cell1Css"><a href="SS/18011617520321048.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 6 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">6 header value is: Number Of
+Usages</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:03</p>
+</td><td class="cell1Css"><a href="SS/18011617520332886.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">12</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 7 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">7 header value is: INT001</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:04</p>
+</td><td class="cell1Css"><a href="SS/1801161752047953.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">13</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 8 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">8 header value is: INT002</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:04</p>
+</td><td class="cell1Css"><a href="SS/18011617520419861.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 9 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">9 header value is: INT003</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:05</p>
+</td><td class="cell1Css"><a href="SS/18011617520572.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 10 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">10 header value is: INT004</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:06</p>
+</td><td class="cell1Css"><a href="SS/18011617520669845.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">16</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 11 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">11 header value is: INT005</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:07</p>
+</td><td class="cell1Css"><a href="SS/18011617520723731.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 12 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">12 header value is: INT006</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:07</p>
+</td><td class="cell1Css"><a href="SS/18011617520785621.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 13 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">13 header value is: INT007</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:08</p>
+</td><td class="cell1Css"><a href="SS/18011617520881121.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 14 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">14 header value is: INT008</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:08</p>
+</td><td class="cell1Css"><a href="SS/18011617520815675.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 15 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">15 header value is: INT009</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:09</p>
+</td><td class="cell1Css"><a href="SS/18011617520995087.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 16 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">16 header value is: INT010</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:09</p>
+</td><td class="cell1Css"><a href="SS/18011617520920330.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">22</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 17 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">17 header value is: INT011</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:10</p>
+</td><td class="cell1Css"><a href="SS/18011617521024103.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 18 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">18 header value is: INT012</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:11</p>
+</td><td class="cell1Css"><a href="SS/18011617521132169.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 19 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">19 header value is: INT013</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:12</p>
+</td><td class="cell1Css"><a href="SS/18011617521284856.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">25</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 20 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">20 header value is: INT014</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:12</p>
+</td><td class="cell1Css"><a href="SS/18011617521235390.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 21 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">21 header value is: INT015</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:13</p>
+</td><td class="cell1Css"><a href="SS/18011617521344988.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 22 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">22 header value is: INT016</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:14</p>
+</td><td class="cell1Css"><a href="SS/18011617521499477.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">28</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 23 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">23 header value is: INT017</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:15</p>
+</td><td class="cell1Css"><a href="SS/18011617521572648.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">29</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 24 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">24 header value is: INT018</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:15</p>
+</td><td class="cell1Css"><a href="SS/180116175215905.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 25 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">25 header value is: INT019</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:16</p>
+</td><td class="cell1Css"><a href="SS/18011617521691840.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">31</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 26 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">26 header value is: INT020</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:17</p>
+</td><td class="cell1Css"><a href="SS/18011617521795614.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">32</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 27 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">27 header value is: INT021</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:17</p>
+</td><td class="cell1Css"><a href="SS/1801161752176743.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">33</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 28 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">28 header value is: INT022</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:18</p>
+</td><td class="cell1Css"><a href="SS/18011617521833065.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">34</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 29 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">29 header value is: INT023</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:19</p>
+</td><td class="cell1Css"><a href="SS/18011617521932012.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">35</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 30 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">30 header value is: INT024</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:19</p>
+</td><td class="cell1Css"><a href="SS/18011617521961703.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">verifying 31 header value</p>
+</td><td class="cell1Css">
+<p style="color: green;">31 header value is: INT025</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:20</p>
+</td><td class="cell1Css"><a href="SS/1801161752206791.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">37</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateHeaderNames</p>
+</td><td class="cell1Css">
+<p style="color: green;">Validation of all header names</p>
+</td><td class="cell1Css">
+<p style="color: green;">All the header names are validated successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:20</p>
+</td><td class="cell1Css"><a href="SS/18011617522016062.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ValidateSuccessMsgAfterFileUpload</p>
+</td><td class="cell1Css">
+<p>Verifying success msg</p>
+</td><td class="cell1Css">
+<p>After file uploading, Success message is displaying on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:52:21</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">39</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSuccessMsgAfterFileUpload</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking success msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">After file uploading, success message showing successfully as: Meter data file was validated successfully.</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:21</p>
+</td><td class="cell1Css"><a href="SS/18011617522166958.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>40</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> HandleAlertWithOutSave</p>
+</td><td class="cell1Css">
+<p>Click on browser back button</p>
+</td><td class="cell1Css">
+<p>Clicking on browser back button done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:52:21</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> HandleAlertWithOutSave</p>
+</td><td class="cell1Css">
+<p>Handling Alert</p>
+</td><td class="cell1Css">
+<p>By clicking 'No', Handling alert popup done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:52:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>42</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p>Verifying Save Button</p>
+</td><td class="cell1Css">
+<p>After Meter data file upload, Save button is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:52:38</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">43</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p style="color: green;">Checking save button enabling</p>
+</td><td class="cell1Css">
+<p style="color: green;">After Meter data file upload, Save button is enabled on screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:38</p>
+</td><td class="cell1Css"><a href="SS/18011617523884115.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> ClickSaveButtonAfterUpload</p>
+</td><td class="cell1Css">
+<p>Clicking on save button</p>
+</td><td class="cell1Css">
+<p>After Meter data file upload, Save button click done successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:52:46</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: green;">45</p>
+</td><td class="cell1Css">
+<p style="color: green;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ValidateSuccessMsgAfterSaveButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Varify success msg</p>
+</td><td class="cell1Css">
+<p style="color: green;">After clicking on save button, Success message is displaying on screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:52:54</p>
+</td><td class="cell1Css"><a href="SS/1801161752541143.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: red;">46</p>
+</td><td class="cell1Css">
+<p style="color: red;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: red;"> ValidateSuccessMsgAfterSaveButton</p>
+</td><td class="cell1Css">
+<p style="color: red;">Checking success msg</p>
+</td><td class="cell1Css">
+<p style="color: red;">After clicking on save button, success message is showing wrong</p>
+</td><td class="cell1Css">
+<p style="color: red;">16-Jan,18 17:52:55</p>
+</td><td class="cell1Css"><a href="SS/18011617525546624.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: red;">47</p>
+</td><td class="cell1Css">
+<p style="color: red;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: red;"> ValidateSuccessMsgAfterSaveButton</p>
+</td><td class="cell1Css">
+<p style="color: red;">testStepFail</p>
+</td><td class="cell1Css">
+<p style="color: red;">After clicking on save button, success message is showing wrong</p>
+</td><td class="cell1Css">
+<p style="color: red;">16-Jan,18 17:52:55</p>
+</td><td class="cell1Css"><a href="SS/18011617525520440.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: red;">48</p>
+</td><td class="cell1Css">
+<p style="color: red;">MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p style="color: red;"> HandleAlertWithOutSave</p>
+</td><td class="cell1Css">
+<p style="color: red;">testStepFail</p>
+</td><td class="cell1Css">
+<p style="color: red;">After clicking on save button, success message is showing wrong</p>
+</td><td class="cell1Css">
+<p style="color: red;">16-Jan,18 17:52:56</p>
+</td><td class="cell1Css"><a href="SS/18011617525660345.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC01_SQMD_MeterDataFileUpload">
+<td class="cell1Css">
+<p style="color: red;">49</p>
+</td><td class="cell1Css">
+<p style="color: red;">TC01_SQMD_MeterDataFileUpload</p>
+</td><td class="cell1Css">
+<p style="color: red;"> MeterDataFileUploadFunctionality</p>
+</td><td class="cell1Css">
+<p style="color: red;">testStepFail</p>
+</td><td class="cell1Css">
+<p style="color: red;">After clicking on save button, success message is showing wrong</p>
+</td><td class="cell1Css">
+<p style="color: red;">16-Jan,18 17:52:56</p>
+</td><td class="cell1Css"><a href="SS/18011617525691708.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

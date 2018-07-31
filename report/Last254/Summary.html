@@ -1,0 +1,1786 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML')" href="#testTable">
+<li>SQMD_SRP_254_NewRecordFSAndCompareInXML</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-02-12T10:43:58Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-02-12T10:48:52Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:14:30</p>
+</td><td class="cell1Css"><a href="SS/18021216143059275.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">3</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:14:38</p>
+</td><td class="cell1Css"><a href="SS/1802121614384268.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:38</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:38</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:49</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:14:55</p>
+</td><td class="cell1Css"><a href="SS/18021216145575941.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:14:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:15:06</p>
+</td><td class="cell1Css"><a href="SS/18021216150698756.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 4097</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:12</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:15:23</p>
+</td><td class="cell1Css"><a href="SS/18021216152361147.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> verifyStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyStatus method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:28</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:15:39</p>
+</td><td class="cell1Css"><a href="SS/180212161539822.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:15:39</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:00</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:18:10</p>
+</td><td class="cell1Css"><a href="SS/18021216181064723.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:11</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Status Verified. Current Status:SUCCESS Expected Status:SUCCESS</p>
+</td><td class="cell1Css">
+<p style="color: green;">12-Feb,18 16:18:11</p>
+</td><td class="cell1Css"><a href="SS/18021216181149378.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> verifyStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyStatus method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> LoadIdfromDBusingSubmitId</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>LoadIdfromDBusingSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> LoadIdfromDBusingSubmitId</p>
+</td><td class="cell1Css">
+<p>Fetch ID</p>
+</td><td class="cell1Css">
+<p>Fetched Load id:4098 successfully using submit id: 4097</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:26</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> LoadIdfromDBusingSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>LoadIdfromDBusingSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getAllStatusFromDB method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: SEND</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: SENDING</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: SENT</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: STATUSING</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>36</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: INPROGRESS</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: STATUSING</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: SUCCESS</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>39</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: RETRIEVE</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>40</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: RETRIEVING</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Status is: RETRIEVED</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>42</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getAllStatusFromDB</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getAllStatusFromDB method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>43</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getLoadStatus</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getLoadStatus method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getLoadStatus</p>
+</td><td class="cell1Css">
+<p>Fetch Status</p>
+</td><td class="cell1Css">
+<p>The Load Status is: RETRIEVED</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>45</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getLoadStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getLoadStatus method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>46</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getFilePathAndverifyStatuswithstatusDetail</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getFilePathAndverifyStatuswithstatusDetail method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getFilePathAndverifyStatuswithstatusDetail</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Successfully verified status with its status details</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:42</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>48</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getFilePathAndverifyStatuswithstatusDetail</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getFilePathAndverifyStatuswithstatusDetail method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>49</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>readandcomparevaluesinXML method starts</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 17.2451810</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>51</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 87.6826950</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>52</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 48.5549520</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 9.8799680</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>54</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 1.3326770</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>55</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 58.5733260</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>56</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 23.5337060</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>57</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 10.3673260</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>58</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 56.3091700</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>59</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 37.2537230</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>60</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 85.2061590</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>61</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 5.9281240</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>62</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 86.1412620</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>63</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 48.3343440</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>64</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 58.2726290</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>65</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 29.0492620</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>66</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 15.7558510</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>67</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 28.9088530</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>68</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 67.7800920</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>69</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 13.6828860</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>70</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 44.3066560</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>71</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 85.9516560</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>72</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 74.9685510</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>73</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 27.2905660</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>74</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 94.0800860</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>75</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 34.6146710</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>76</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 39.4085720</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>77</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 81.6294290</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>78</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 10.2833670</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>79</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 88.0548070</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>80</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 53.5870250</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>81</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 62.6902200</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>82</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 63.0789190</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>83</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 27.5750920</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>84</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 3.8943830</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>85</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 97.2945470</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>86</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 10.4352920</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>87</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 49.0459560</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>88</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 6.6658980</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>89</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 42.3083450</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>90</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 59.2926580</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>91</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 35.2515430</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>92</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 55.9638030</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>93</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 58.4392170</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>94</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 70.6799260</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>95</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 7.8548130</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>96</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 62.5306600</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>97</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Submitted Xml is present in retrievred XML ,value is 96.7588050</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_254_NewRecordFSAndCompareInXML">
+<td class="cell1Css">
+<p>98</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> readandcomparevaluesinXML</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>readandcomparevaluesinXML method ends</p>
+</td><td class="cell1Css">
+<p>12-Feb,18 16:18:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

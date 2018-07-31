@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+	<listeners>
+		<listener class-name="com.automation.framework.utilities.TestListener" />
+	</listeners>
+	<test name="Test">
+		<classes>
+			 <class name="com.pge.d2.tests.TILFunctional_910"/>
+      		 <class name="com.pge.d2.tests.TILFunctional_874"/>
+			 <class name="com.pge.d2.tests.TILFunctional_823"/>
+			 <class name="com.pge.d2.tests.TILFunctional_824"/>
+			 <class name="com.pge.d2.tests.TILFunctional_825"/>
+			 <class name="com.pge.d2.tests.TILFunctional_828"/>
+			 <class name="com.pge.d2.tests.TILFunctional_834"/>
+			 <class name="com.pge.d2.tests.TILFunctional_839"/>
+			 <class name="com.pge.d2.tests.TILFunctional_840"/>
+			 <class name="com.pge.d2.tests.TILFunctional_845"/>
+			 <class name="com.pge.d2.tests.TILFunctional_848"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

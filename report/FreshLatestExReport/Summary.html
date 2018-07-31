@@ -1,0 +1,4985 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate')" href="#testTable">
+<li>SQMD_SRP_297_NegativeCaseOfTradeDate</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor')" href="#testTable">
+<li>SQMD_SRP_297_SubmissionFromUsageFactor</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_320_XMLValidations')" href="#testTable">
+<li>SQMD_SRP_320_XMLValidations</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter')" href="#testTable">
+<li>SQMD_SRP318_TradeDateAndHistoryFilter</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">4</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">4</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-02-02T14:50:54Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-02-02T15:02:05Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:21:10</p>
+</td><td class="cell1Css"><a href="SS/18020220211083138.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting Current Date</p>
+</td><td class="cell1Css">
+<p>Current date is: 02-Feb-18</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:12</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting Current Date from CAISO</p>
+</td><td class="cell1Css">
+<p>Current date from CAISO calendar is: 02-Feb-18</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:15</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting T+48 Date from CAISO</p>
+</td><td class="cell1Css">
+<p>T+48 date from CAISO calendar is: 11/21/2017</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:15</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:21:20</p>
+</td><td class="cell1Css"><a href="SS/18020220212031978.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:21</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyTradeDatePresentInApp method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:21</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Text</p>
+</td><td class="cell1Css">
+<p style="color: green;">Trade Date Fetched Succesfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:21:26</p>
+</td><td class="cell1Css"><a href="SS/18020220212698217.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyTradeDatePresentInApp method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:37</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Profile</p>
+</td><td class="cell1Css">
+<p>Profile Value Set as:22</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:42</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Interval</p>
+</td><td class="cell1Css">
+<p>Interval value set as: 14</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:43</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Comment</p>
+</td><td class="cell1Css">
+<p>Comment set as: 02/02/2018 08:21:42</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:43</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Done Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:21:48</p>
+</td><td class="cell1Css"><a href="SS/18020220214855011.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Value is saved</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:21:56</p>
+</td><td class="cell1Css"><a href="SS/1802022021567550.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:21:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Profile value  Successfully set as: 22</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:22:12</p>
+</td><td class="cell1Css"><a href="SS/18020220221219297.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Interval value Successfully set as:14</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:22:12</p>
+</td><td class="cell1Css"><a href="SS/1802022022128616.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:13</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnSubmit method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:13</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Submit Button</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:23</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnSubmit method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifySubmittedDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifySubmittedDate method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifySubmittedDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date Verified.Excpected Date:11/21/2017 Actual Date Present:11/21/2017</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:22:28</p>
+</td><td class="cell1Css"><a href="SS/18020220222838555.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifySubmittedDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifySubmittedDate method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:29</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:29</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">33</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:22:39</p>
+</td><td class="cell1Css"><a href="SS/18020220223924911.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:22:50</p>
+</td><td class="cell1Css"><a href="SS/18020220225080572.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>39</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:22:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">40</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:23:06</p>
+</td><td class="cell1Css"><a href="SS/18020220230619734.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:23:06</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>42</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">43</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:25:37</p>
+</td><td class="cell1Css"><a href="SS/18020220253722512.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">45</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Status Verified. Current Status:SUCCESS Expected Status:SUCCESS</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:25:37</p>
+</td><td class="cell1Css"><a href="SS/18020220253786383.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>46</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:38</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>getSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:38</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">48</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Text</p>
+</td><td class="cell1Css">
+<p style="color: green;">Submit Id Fetched Succesfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:25:43</p>
+</td><td class="cell1Css"><a href="SS/18020220254328059.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>49</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>latestStatusInDB method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>51</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> connectToDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>connectToDatabase method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>52</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> connectToDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:56</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> connectToDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>connectToDatabase method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>54</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>55</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>There are total 1 record in Usage factor Table</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>56</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Latest Status in database is: SUCCESS And Expected Status is: SUCCESS</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>57</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>latestStatusInDB method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>58</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>latestStatusInDBInInterfaceTable method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:25:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>59</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> connectToDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>connectToDatabase method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:02</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>60</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> connectToDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>61</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> connectToDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>connectToDatabase method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>62</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>63</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>There are total 1 record in Usage factor Table</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>64</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Latest Status in database is: SUCCESSFUL And Expected Status is: SUCCESSFUL</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>65</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>latestStatusInDBInInterfaceTable method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>66</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> ValidateXMLValue</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>ValidateXMLValue methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>67</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> ValidateXMLValue</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Validate XML value query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:14</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>68</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> ValidateXMLValue</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>ValidateXMLValue methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>69</p>
+</td><td class="cell1Css">
+<p>MeterDataFileUploadPage</p>
+</td><td class="cell1Css">
+<p> archeivingFile</p>
+</td><td class="cell1Css">
+<p>Verify XML load value</p>
+</td><td class="cell1Css">
+<p>XML Load value is matches with DB LOAD_ID coloumn.So Xml file - FINAL_PCG2_20171121@20180202065323(3978)_SUBMITTED.xml got created for the latest submission of trade Date</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:14</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:31:55</p>
+</td><td class="cell1Css"><a href="SS/1802022031557478.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> ValidateXMLValue</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>ValidateXMLValue methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> ValidateXMLValue</p>
+</td><td class="cell1Css">
+<p>Query execution</p>
+</td><td class="cell1Css">
+<p>Validate XML value query is executed successfuly</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> ValidateXMLValue</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>ValidateXMLValue methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> archeivingFile</p>
+</td><td class="cell1Css">
+<p>Verify XML load value</p>
+</td><td class="cell1Css">
+<p>XML Load value is matches with DB LOAD_ID coloumn.So Xml file - FINAL_PCG2_20180131@20180202070125(3982)_SUBMITTED.xml got created for the latest submission of trade Date</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>xmlValidationSendRequest methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 52.548316</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 62.373109</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 76.161514</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 92.879622</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 87.455577</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 44.766518</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 28.846583</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 15.120360</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 71.632366</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>36</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 32.687803</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>39</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 80.344255</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>40</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>42</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 29.794784</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>43</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>45</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 30.061843</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>46</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>48</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 25.112051</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>49</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>51</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 82.878677</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>52</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>54</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 53.171363</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>55</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>56</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>57</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 56.093849</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>58</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>59</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>60</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 12.029426</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>61</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>62</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>63</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 94.032396</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>64</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>65</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>66</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 64.865999</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>67</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>68</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>69</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 43.328049</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>70</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>71</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>72</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 41.718284</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>73</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>74</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>75</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 1.589527</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>76</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>77</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>78</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 9.536873</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>79</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>80</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>81</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 33.016635</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>82</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>83</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>84</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 12.374309</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>85</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>86</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>87</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 4.302479</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>88</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>89</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>90</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 93.926503</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>91</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>92</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>93</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 33.660778</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>94</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>95</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>96</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 49.184315</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>97</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>98</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>99</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 97.856574</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>100</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>101</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>102</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 36.936409</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>103</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>104</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>105</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 52.283377</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>106</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>107</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>108</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 73.430429</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>109</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>110</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>111</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 93.532232</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>112</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>113</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>114</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 53.800275</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>115</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>116</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>117</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 10.568753</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>118</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>119</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>120</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 7.211977</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>121</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>122</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>123</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 21.355649</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>124</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>125</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>126</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 16.355042</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>127</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>128</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>129</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 96.290057</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>130</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>131</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>132</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 47.678145</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>133</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>134</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>135</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 99.646206</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>136</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>137</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>138</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 3.665172</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>139</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>140</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>141</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 52.495617</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>142</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>143</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>144</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 19.746546</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>145</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>146</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>147</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 26.162328</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>148</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>149</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> getTimeAndDate</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>getTimeAndDate methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>150</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Verification</p>
+</td><td class="cell1Css">
+<p>Value of Xml file present in database: 80.655754</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_320_XMLValidations">
+<td class="cell1Css">
+<p>152</p>
+</td><td class="cell1Css">
+<p>SelectQuery</p>
+</td><td class="cell1Css">
+<p> xmlValidationSendRequest</p>
+</td><td class="cell1Css">
+<p>Method ends</p>
+</td><td class="cell1Css">
+<p>xmlValidationSendRequest methods ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:32:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:30:14</p>
+</td><td class="cell1Css"><a href="SS/18020220301490973.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">3</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:30:20</p>
+</td><td class="cell1Css"><a href="SS/18020220302055556.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:21</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:21</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:31</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:30:36</p>
+</td><td class="cell1Css"><a href="SS/1802022030363040.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:30:47</p>
+</td><td class="cell1Css"><a href="SS/18020220304713106.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 3982</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:53</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:53</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:53</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>History Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:58</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:30:58</p>
+</td><td class="cell1Css"><a href="SS/18020220305878355.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method Ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ApplyFSHistoryFilter method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>From date Set in Filter</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>To date Set in Filter</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Apply Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:31:31</p>
+</td><td class="cell1Css"><a href="SS/18020220313166039.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>From Date Successfully set as:01/01/2018</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>To Date Successfully set as:02/04/2018</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Dispaly Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">Displaying History according to user date range</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:31:31</p>
+</td><td class="cell1Css"><a href="SS/18020220313195528.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> ApplyFSHistoryFilter</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ApplyFSHistoryFilter method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>findRecordwithSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">29</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: green;">set text</p>
+</td><td class="cell1Css">
+<p style="color: green;">value entered in search box</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:31:37</p>
+</td><td class="cell1Css"><a href="SS/18020220313786487.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data is present in table</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:31:47</p>
+</td><td class="cell1Css"><a href="SS/18020220314756774.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP318_TradeDateAndHistoryFilter">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> findRecordwithSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>findRecordwithSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:31:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">1</p>
+</td><td class="cell1Css">
+<p style="color: green;">BaseTestClass</p>
+</td><td class="cell1Css">
+<p style="color: green;"> launchApplication</p>
+</td><td class="cell1Css">
+<p style="color: green;">Application Launch</p>
+</td><td class="cell1Css">
+<p style="color: green;">Launch Application: http://tsitappiiswc001:8010/</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:26:23</p>
+</td><td class="cell1Css"><a href="SS/18020220262354218.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting Current Date</p>
+</td><td class="cell1Css">
+<p>Current date is: 02-Feb-18</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:24</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting Current Date from CAISO</p>
+</td><td class="cell1Css">
+<p>Current date from CAISO calendar is: 02-Feb-18</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:24</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting T+48 Date from CAISO</p>
+</td><td class="cell1Css">
+<p>T+48 date from CAISO calendar is: 11/21/2017</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:24</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:26:30</p>
+</td><td class="cell1Css"><a href="SS/18020220263057371.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:30</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyTradeDatePresentInApp method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:30</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Text</p>
+</td><td class="cell1Css">
+<p style="color: green;">Trade Date Fetched Succesfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:26:35</p>
+</td><td class="cell1Css"><a href="SS/1802022026356522.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyTradeDatePresentInApp method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnSubmit method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Submit Button</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:46</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnSubmit method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> checkNegativeUFTDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>checkNegativeUFTDate method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> UFDateAfterT9</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>UFDateAfterT9 method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> UFDateAfterT9</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>UFDateAfterT9 method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> checkNegativeUFTDate</p>
+</td><td class="cell1Css">
+<p>Set Date</p>
+</td><td class="cell1Css">
+<p>Set Trade In Date Field:02/02/2018</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> checkNegativeUFTDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>checkNegativeUFTDate method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:26:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:27:07</p>
+</td><td class="cell1Css"><a href="SS/18020220270726011.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:27:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:27:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:27:18</p>
+</td><td class="cell1Css"><a href="SS/18020220271856579.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:27:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyNegativeStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyNegativeStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:27:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:27:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:27:54</p>
+</td><td class="cell1Css"><a href="SS/18020220275430175.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:27:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:29:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">02-Feb,18 20:30:05</p>
+</td><td class="cell1Css"><a href="SS/18020220300512714.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:06</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyNegativeStatus</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Status Verified. Current Status:ERROR Expected Status:ERROR</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:06</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_297_NegativeCaseOfTradeDate">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyNegativeStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyNegativeStatus method ends</p>
+</td><td class="cell1Css">
+<p>02-Feb,18 20:30:06</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

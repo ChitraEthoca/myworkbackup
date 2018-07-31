@@ -1,0 +1,5461 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving')" href="#testTable">
+<li>SRP_219_02_VerifyInDatabaseAfterSaving</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_219_03_VersoiningInDatabase')" href="#testTable">
+<li>SRP_219_03_VersoiningInDatabase</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase')" href="#testTable">
+<li>SRP_219_04_DifferentViewsInDatabase</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor')" href="#testTable">
+<li>SRP_219_SelectTradeDateAndEditUsageFactor</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_247_SQMD_Auditing')" href="#testTable">
+<li>SRP_247_SQMD_Auditing</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter')" href="#testTable">
+<li>SRP_247_SQMD_ClearRefreshFilter</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_247_SQMD_HistoryFilter')" href="#testTable">
+<li>SRP_247_SQMD_HistoryFilter</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor')" href="#testTable">
+<li style="color : red;">SRP_247_VersioningForEditedUsageFactor</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor')" href="#testTable">
+<li>SRP_297_01_SubmissionFromUsageFactor</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_85_01_AuditLogHistory')" href="#testTable">
+<li>SRP_85_01_AuditLogHistory</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SRP_85_02_HistoryTabDispaly')" href="#testTable">
+<li>SRP_85_02_HistoryTabDispaly</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">11</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">10</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-01-16T11:16:44Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-01-16T11:37:00Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:46:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:47:08</p>
+</td><td class="cell1Css"><a href="SS/18011616470849486.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>History Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:47:17</p>
+</td><td class="cell1Css"><a href="SS/18011616471719225.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> CheckHistory</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>CheckHistory method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckHistory</p>
+</td><td class="cell1Css">
+<p style="color: green;">Dispaly History</p>
+</td><td class="cell1Css">
+<p style="color: green;">No data available in Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:47:27</p>
+</td><td class="cell1Css"><a href="SS/1801161647276673.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> CheckHistory</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>CheckHistory method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:28</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>DefaultFilterDate method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:28</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Default Filter</p>
+</td><td class="cell1Css">
+<p>Default Filter FromDate:12/17/2017</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Default filter</p>
+</td><td class="cell1Css">
+<p>Default Filter of To Date:01/16/2018 And contains Present Date</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter with present date is Present To Date:01/16/2018</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:47:36</p>
+</td><td class="cell1Css"><a href="SS/18011616473678044.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Default Filter of One Month with present date is Present FromDate:12/17/2017To Date:01/16/2018</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:47:36</p>
+</td><td class="cell1Css"><a href="SS/1801161647369815.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_HistoryFilter">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> DefaultFilterDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>DefaultFilterDate method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:28</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:52:37</p>
+</td><td class="cell1Css"><a href="SS/18011616523761976.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:37</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On RadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:52:53</p>
+</td><td class="cell1Css"><a href="SS/18011616525318297.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:54</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:54</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:10</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:10</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnCancelButton</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnCancelButton method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:10</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnCancelButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Cancel Button Successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:53:18</p>
+</td><td class="cell1Css"><a href="SS/18011616531818520.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnCancelButton</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnCancelButton method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p style="color: green;">13</p>
+</td><td class="cell1Css">
+<p style="color: green;">SRP_219_02_VerifyInDatabaseAfterSaving</p>
+</td><td class="cell1Css">
+<p style="color: green;"> VerifyInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Retrieved value From Application Profile value: 25</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:53:19</p>
+</td><td class="cell1Css"><a href="SS/18011616531992911.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">SRP_219_02_VerifyInDatabaseAfterSaving</p>
+</td><td class="cell1Css">
+<p style="color: green;"> VerifyInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Retrieved value From Application Interval value: 1</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:53:19</p>
+</td><td class="cell1Css"><a href="SS/18011616531988954.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>compareValueFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:20</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_02_VerifyInDatabaseAfterSaving">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>compareValueFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:00</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Service Agreement Exclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:02:09</p>
+</td><td class="cell1Css"><a href="SS/18011617020910966.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">History Tab is showing on the screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:02:17</p>
+</td><td class="cell1Css"><a href="SS/18011617021798044.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:17</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> compareDateToVerifyDescendingOrder</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>compareDateToVerifyDescendingOrder method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> compareDateToVerifyDescendingOrder</p>
+</td><td class="cell1Css">
+<p>Get Table Length</p>
+</td><td class="cell1Css">
+<p>Fetching the total table Length</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> compareDateToVerifyDescendingOrder</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Table exist in descending order</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:02:27</p>
+</td><td class="cell1Css"><a href="SS/18011617022794884.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:27</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Successfully Fetched Query From the Properties File</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Data Retrieved</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">QueryExecution</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data Retrieved</p>
+</td><td class="cell1Css">
+<p style="color: green;">There are total 106 record in Usage factorin the Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:02:35</p>
+</td><td class="cell1Css"><a href="SS/18011617023545354.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_02_HistoryTabDispaly">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">SRP_85_02_HistoryTabDispaly</p>
+</td><td class="cell1Css">
+<p style="color: green;"> VerifyInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">The View Table Contains the history</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:02:36</p>
+</td><td class="cell1Css"><a href="SS/18011617023646928.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">3</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:47:55</p>
+</td><td class="cell1Css"><a href="SS/18011616475553949.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:47:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On RadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:48:12</p>
+</td><td class="cell1Css"><a href="SS/18011616481231251.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClearFilterAndGetTableLength Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p>table length</p>
+</td><td class="cell1Css">
+<p>Table Length is currently: 61</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:20</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On clear button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:20</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On clear button and filter cleared</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:48:28</p>
+</td><td class="cell1Css"><a href="SS/18011616482886021.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p>Table Length</p>
+</td><td class="cell1Css">
+<p>Table Length is currently: 61</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:29</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Table Length remained same after clicking on clear button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:29</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClearFilterAndGetTableLength</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClearFilterAndGetTableLength Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:29</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> RefreshForDefaultFilter</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>RefreshForDefaultFilter Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:29</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">16</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> RefreshForDefaultFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Refresh Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:48:37</p>
+</td><td class="cell1Css"><a href="SS/18011616483767565.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> RefreshForDefaultFilter</p>
+</td><td class="cell1Css">
+<p>Default Filter</p>
+</td><td class="cell1Css">
+<p>Default Filter Applied</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> RefreshForDefaultFilter</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>RefreshForDefaultFilter Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>History Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:54</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:48:54</p>
+</td><td class="cell1Css"><a href="SS/1801161648543307.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ApplyUsageFactorHistoryFilter method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:48:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>From date Set in Filter</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:49:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>To date Set in Filter</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:49:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Apply Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:49:44</p>
+</td><td class="cell1Css"><a href="SS/18011616494490516.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>From Date Successfully set as:11/10/2017</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:49:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>To Date Successfully set as:12/21/2017</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:49:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p style="color: green;">29</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Dispaly Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">Displaying History according to user date range</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:49:44</p>
+</td><td class="cell1Css"><a href="SS/18011616494480298.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_ClearRefreshFilter">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ApplyUsageFactorHistoryFilter</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ApplyUsageFactorHistoryFilter method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:49:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:01:22</p>
+</td><td class="cell1Css"><a href="SS/18011617012292386.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>History Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:01:31</p>
+</td><td class="cell1Css"><a href="SS/18011617013165165.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> CheckHistory</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>CheckHistory method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> CheckHistory</p>
+</td><td class="cell1Css">
+<p style="color: green;">Dispaly History</p>
+</td><td class="cell1Css">
+<p style="color: green;">No data available in Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:01:42</p>
+</td><td class="cell1Css"><a href="SS/1801161701422004.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> CheckHistory</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>CheckHistory method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Successfully Fetched Query From the Properties File</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Data Retrieved</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p style="color: green;">15</p>
+</td><td class="cell1Css">
+<p style="color: green;">QueryExecution</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data Retrieved</p>
+</td><td class="cell1Css">
+<p style="color: green;">There are total 183 record in Usage factorin the Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:01:50</p>
+</td><td class="cell1Css"><a href="SS/18011617015091906.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_SQMD_Auditing">
+<td class="cell1Css">
+<p style="color: green;">17</p>
+</td><td class="cell1Css">
+<p style="color: green;">SRP_247_SQMD_Auditing</p>
+</td><td class="cell1Css">
+<p style="color: green;"> SQMDClearRefreshFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">Auditing For Trade Date is Present in database</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:01:51</p>
+</td><td class="cell1Css"><a href="SS/18011617015129541.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:58:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Service Agreement Exclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:58:26</p>
+</td><td class="cell1Css"><a href="SS/18011616582649418.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:58:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> addSAID</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>addSAID method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:58:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> addSAID</p>
+</td><td class="cell1Css">
+<p>Set SAID</p>
+</td><td class="cell1Css">
+<p>Value Of SAID set</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:58:42</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> addSAID</p>
+</td><td class="cell1Css">
+<p>Set Comment</p>
+</td><td class="cell1Css">
+<p>Value Of Comment Set</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:58:51</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">7</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> addSAID</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Add button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:58:59</p>
+</td><td class="cell1Css"><a href="SS/18011616585930778.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> addSAID</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Save button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:59:08</p>
+</td><td class="cell1Css"><a href="SS/18011616590855309.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> addSAID</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>addSAID method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">History Tab is showing on the screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:59:16</p>
+</td><td class="cell1Css"><a href="SS/18011616591657989.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:17</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> clickOnReresh</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnReresh method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> clickOnReresh</p>
+</td><td class="cell1Css">
+<p>Refresh</p>
+</td><td class="cell1Css">
+<p>Refreshing the Page</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:25</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> clickOnReresh</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnReresh method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> getAddedStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>getAddedStatus method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> getAddedStatus</p>
+</td><td class="cell1Css">
+<p>Get Status</p>
+</td><td class="cell1Css">
+<p>Getting Status of Added SAID</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:42</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getAddedStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">Status Retrieved as:A Successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:59:50</p>
+</td><td class="cell1Css"><a href="SS/18011616595018374.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> getAddedStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getAddedStatus method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnExclusionTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnExclusionTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnExclusionTab</p>
+</td><td class="cell1Css">
+<p>verify</p>
+</td><td class="cell1Css">
+<p>Exclusion Tab is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:58</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnExclusionTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Exclusion Tab</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:59:58</p>
+</td><td class="cell1Css"><a href="SS/18011616595815964.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnExclusionTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnExclusionTab method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnRemoveAndSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnRemoveAndSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:59:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnRemoveAndSave</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Remove button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:15</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnRemoveAndSave</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Save button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:23</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnRemoveAndSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnRemoveAndSave method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">History Tab is showing on the screen</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:00:31</p>
+</td><td class="cell1Css"><a href="SS/18011617003119706.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On History Tab</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:32</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> ClickOnHistoryTab</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnHistoryTab method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> clickOnReresh</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnReresh method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> clickOnReresh</p>
+</td><td class="cell1Css">
+<p>Refresh</p>
+</td><td class="cell1Css">
+<p>Refreshing the Page</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:40</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> clickOnReresh</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnReresh method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>36</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> getDeletedStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>getDeletedStatus method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:00:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> getDeletedStatus</p>
+</td><td class="cell1Css">
+<p>Get Status</p>
+</td><td class="cell1Css">
+<p>Get Status of Deleted Record</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:04</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p style="color: green;">38</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getDeletedStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Status Retrieved as:D Successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:01:04</p>
+</td><td class="cell1Css"><a href="SS/18011617010479460.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_85_01_AuditLogHistory">
+<td class="cell1Css">
+<p>39</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusions</p>
+</td><td class="cell1Css">
+<p> getDeletedStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getDeletedStatus method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:01:05</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Successfully Fetched Query From the Properties File</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Data Retrieved</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">QueryExecution</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data Retrieved</p>
+</td><td class="cell1Css">
+<p style="color: green;">There are total 15 record in Usage factorin the Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:53:48</p>
+</td><td class="cell1Css"><a href="SS/18011616534883718.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:53:57</p>
+</td><td class="cell1Css"><a href="SS/18011616535770098.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:53:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On RadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:54:14</p>
+</td><td class="cell1Css"><a href="SS/18011616541441326.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:30</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:30</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Profile</p>
+</td><td class="cell1Css">
+<p>Profile Value Set as:17</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:39</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Interval</p>
+</td><td class="cell1Css">
+<p>Interval value set as: 3</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:39</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Comment</p>
+</td><td class="cell1Css">
+<p>Comment set as: AutoT</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:40</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Done Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:54:48</p>
+</td><td class="cell1Css"><a href="SS/18011616544892248.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Value is saved</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:54:59</p>
+</td><td class="cell1Css"><a href="SS/18011616545920261.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:54:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:15</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">25</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Profile value  Successfully set as: 17</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:55:24</p>
+</td><td class="cell1Css"><a href="SS/1801161655243452.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Interval value Successfully set as:3</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:55:24</p>
+</td><td class="cell1Css"><a href="SS/18011616552420569.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:25</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:25</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Successfully Fetched Query From the Properties File</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:33</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:33</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Data Retrieved</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:33</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p style="color: green;">32</p>
+</td><td class="cell1Css">
+<p style="color: green;">QueryExecution</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data Retrieved</p>
+</td><td class="cell1Css">
+<p style="color: green;">There are total 16 record in Usage factorin the Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:55:33</p>
+</td><td class="cell1Css"><a href="SS/18011616553345388.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_03_VersoiningInDatabase">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>SRP_219_03_VersoiningInDatabase</p>
+</td><td class="cell1Css">
+<p> DifferntTableViewInDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Versioning Done in Database after editing values of Usage factors</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting Current Date</p>
+</td><td class="cell1Css">
+<p>Current date is: 16-Jan-18</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:44</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting Current Date from CAISO</p>
+</td><td class="cell1Css">
+<p>Current date from CAISO calendar is: 16-Jan-18</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getTradeDateValuefromCaisoCalender</p>
+</td><td class="cell1Css">
+<p>Getting T+48 Date from CAISO</p>
+</td><td class="cell1Css">
+<p>T+48 date from CAISO calendar is: 11/02/2017</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:48</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:48</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:02:56</p>
+</td><td class="cell1Css"><a href="SS/18011617025618161.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyTradeDatePresentInApp method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:02:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">9</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Text</p>
+</td><td class="cell1Css">
+<p style="color: green;">Trade Date Fetched Succesfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:03:05</p>
+</td><td class="cell1Css"><a href="SS/18011617030510213.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyTradeDatePresentInApp</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyTradeDatePresentInApp method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:05</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:05</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:21</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:21</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:21</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Profile</p>
+</td><td class="cell1Css">
+<p>Profile Value Set as:22</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Interval</p>
+</td><td class="cell1Css">
+<p>Interval value set as: 14</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Comment</p>
+</td><td class="cell1Css">
+<p>Comment set as: </p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">18</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Done Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:03:39</p>
+</td><td class="cell1Css"><a href="SS/18011617033981775.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Value is saved</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:03:49</p>
+</td><td class="cell1Css"><a href="SS/18011617034976003.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:03:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:06</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:06</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Profile value  Successfully set as: 22</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:04:14</p>
+</td><td class="cell1Css"><a href="SS/18011617041492701.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">24</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Interval value Successfully set as:14</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:04:15</p>
+</td><td class="cell1Css"><a href="SS/18011617041546083.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnSubmit method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:15</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Submit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:31</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnSubmit</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnSubmit method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifySubmittedDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifySubmittedDate method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:31</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">30</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifySubmittedDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date Verified.Excpected Date:11/02/2017 Actual Date Present:11/02/2017</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:04:40</p>
+</td><td class="cell1Css"><a href="SS/18011617044072283.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>31</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifySubmittedDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifySubmittedDate method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">33</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:04:56</p>
+</td><td class="cell1Css"><a href="SS/18011617045618732.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:04:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:05:13</p>
+</td><td class="cell1Css"><a href="SS/18011617051357350.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:05:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>verifyStatus method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:05:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>39</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:05:22</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">40</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:05:38</p>
+</td><td class="cell1Css"><a href="SS/18011617053833915.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:05:38</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">42</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Status Verified. Current Status:SENT Expected Status:SENT</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:05:47</p>
+</td><td class="cell1Css"><a href="SS/18011617054776037.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>43</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">44</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:06:33</p>
+</td><td class="cell1Css"><a href="SS/18011617063394478.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>45</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:34</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">46</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Status Verified. Current Status:SUCCESS Expected Status:SUCCESS</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:06:34</p>
+</td><td class="cell1Css"><a href="SS/18011617063446188.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> verifyStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>verifyStatus method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:34</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>48</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>getSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:34</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">49</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getSubmitId</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Text</p>
+</td><td class="cell1Css">
+<p style="color: green;">Submit Id Fetched Succesfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 17:06:42</p>
+</td><td class="cell1Css"><a href="SS/18011617064263282.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> getSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>51</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>latestStatusInDB method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>52</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>verify</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:51</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>54</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>There are total 1 record in Usage factor Table</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>55</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Latest Status in database is: SUCCESS And Expected Status is: SUCCESS</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>56</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDB</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>latestStatusInDB method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>57</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>latestStatusInDBInInterfaceTable method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>58</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>verify</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>59</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:59</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>60</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>There are total 1 record in Usage factor Table</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>61</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Latest Status in database is: SUCCESS And Expected Status is: SUCCESS</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_297_01_SubmissionFromUsageFactor">
+<td class="cell1Css">
+<p>62</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> latestStatusInDBInInterfaceTable</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>latestStatusInDBInInterfaceTable method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 17:06:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:49:53</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:50:02</p>
+</td><td class="cell1Css"><a href="SS/18011616500256237.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:50:02</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:50:02</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On RadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:50:19</p>
+</td><td class="cell1Css"><a href="SS/18011616501954514.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:50:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorTradeDateFilter method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:50:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p>Set Date</p>
+</td><td class="cell1Css">
+<p>From date Set in Filter</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:50:44</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p>Set Date</p>
+</td><td class="cell1Css">
+<p>To date Set in Filter</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:00</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Apply Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:08</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">From Date Successfully set as: 11/10/2017</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:51:08</p>
+</td><td class="cell1Css"><a href="SS/18011616510831845.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">12</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">To Date Successfully set as:12/21/2017</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:51:09</p>
+</td><td class="cell1Css"><a href="SS/18011616510985069.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorTradeDateFilter</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorTradeDateFilter method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:26</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Profile</p>
+</td><td class="cell1Css">
+<p>Profile Value Set as:25</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:34</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Interval</p>
+</td><td class="cell1Css">
+<p>Interval value set as: 1</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:34</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Comment</p>
+</td><td class="cell1Css">
+<p>Comment set as: AT</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:35</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">21</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Done Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:51:43</p>
+</td><td class="cell1Css"><a href="SS/1801161651434979.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">22</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Value is saved</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:51:54</p>
+</td><td class="cell1Css"><a href="SS/18011616515436489.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:51:54</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:10</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:10</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Profile value  Successfully set as: 25</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:52:19</p>
+</td><td class="cell1Css"><a href="SS/18011616521930737.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Interval value Successfully set as:1</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:52:19</p>
+</td><td class="cell1Css"><a href="SS/18011616521942454.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_SelectTradeDateAndEditUsageFactor">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:52:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:59</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Successfully Fetched Query From the Properties File</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Data Retrieved</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:07</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">QueryExecution</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data Retrieved</p>
+</td><td class="cell1Css">
+<p style="color: green;">There are total 3 record in Usage factorin the Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:57:07</p>
+</td><td class="cell1Css"><a href="SS/18011616570723283.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:57:16</p>
+</td><td class="cell1Css"><a href="SS/18011616571639347.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On RadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:57:33</p>
+</td><td class="cell1Css"><a href="SS/18011616573353909.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>EditUsageFactorFieldsAndSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Profile</p>
+</td><td class="cell1Css">
+<p>Profile Value Set as:23</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:58</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Interval</p>
+</td><td class="cell1Css">
+<p>Interval value set as: 6</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:59</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p>Set Comment</p>
+</td><td class="cell1Css">
+<p>Comment set as: testW</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:57:59</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Done Button</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:58:07</p>
+</td><td class="cell1Css"><a href="SS/1801161658076903.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p style="color: red;">21</p>
+</td><td class="cell1Css">
+<p style="color: red;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: red;"> EditUsageFactorFieldsAndSave</p>
+</td><td class="cell1Css">
+<p style="color: red;">set value</p>
+</td><td class="cell1Css">
+<p style="color: red;">Failed To set values and save</p>
+</td><td class="cell1Css">
+<p style="color: red;">16-Jan,18 16:58:08</p>
+</td><td class="cell1Css"><a href="SS/18011616580831449.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_247_VersioningForEditedUsageFactor">
+<td class="cell1Css">
+<p style="color: red;">22</p>
+</td><td class="cell1Css">
+<p style="color: red;">SRP_247_VersioningForEditedUsageFactor</p>
+</td><td class="cell1Css">
+<p style="color: red;"> DifferntTableViewInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: red;">Execution</p>
+</td><td class="cell1Css">
+<p style="color: red;">Error in Execution</p>
+</td><td class="cell1Css">
+<p style="color: red;">16-Jan,18 16:58:08</p>
+</td><td class="cell1Css"><a href="SS/18011616580826819.png">
+<p style="color : red;">FAIL</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Usage Factor Maintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:55:50</p>
+</td><td class="cell1Css"><a href="SS/1801161655505479.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:55:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p style="color: green;">5</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On RadioButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:56:07</p>
+</td><td class="cell1Css"><a href="SS/18011616560755316.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnTradeDateRangeRadioButton</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>clickOnTradeDateRangeRadioButton Method Ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Clicked On Edit Button</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:24</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> ClickOnEditButtonInUsageFactor</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ClickOnEditButtonInUsageFactor method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>10</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnCancelButton</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnCancelButton method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p style="color: green;">11</p>
+</td><td class="cell1Css">
+<p style="color: green;">UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnCancelButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Cancel Button Successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:56:32</p>
+</td><td class="cell1Css"><a href="SS/18011616563285675.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>UsageFactorMaintenance</p>
+</td><td class="cell1Css">
+<p> clickOnCancelButton</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnCancelButton method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p style="color: green;">13</p>
+</td><td class="cell1Css">
+<p style="color: green;">SRP_219_04_DifferentViewsInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DifferntTableViewInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Retrieved value From Application Profile value: 25</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:56:33</p>
+</td><td class="cell1Css"><a href="SS/18011616563325721.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p style="color: green;">14</p>
+</td><td class="cell1Css">
+<p style="color: green;">SRP_219_04_DifferentViewsInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DifferntTableViewInDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Fetch Value</p>
+</td><td class="cell1Css">
+<p style="color: green;">Retrieved value From Application Interval value: 1</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:56:33</p>
+</td><td class="cell1Css"><a href="SS/18011616563356340.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>compareLatestUsageFactorValueFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>verify</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>There are total 1 record in Usage factor Table</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Latest Profile value in database is: 25Profile value in application for :13-NOV-2017 is25</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>20</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Latest Interval value in database is: 1 Interval value in application for :13-NOV-2017 is1</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> compareLatestUsageFactorValueFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>compareLatestUsageFactorValueFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method starts</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>23</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Successfully Fetched Query From the Properties File</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:49</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Database Connection</p>
+</td><td class="cell1Css">
+<p>Database Connection Established</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Data Retrieved</p>
+</td><td class="cell1Css">
+<p>Value retrieved from Database Successfully</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:50</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p style="color: green;">26</p>
+</td><td class="cell1Css">
+<p style="color: green;">QueryExecution</p>
+</td><td class="cell1Css">
+<p style="color: green;"> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p style="color: green;">Data Retrieved</p>
+</td><td class="cell1Css">
+<p style="color: green;">There are total 183 record in Usage factorin the Table</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 16:56:50</p>
+</td><td class="cell1Css"><a href="SS/18011616565031280.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SRP_219_04_DifferentViewsInDatabase">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>QueryExecution</p>
+</td><td class="cell1Css">
+<p> getTableLengthFromDatabase</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>getTableLengthFromDatabase method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 16:56:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

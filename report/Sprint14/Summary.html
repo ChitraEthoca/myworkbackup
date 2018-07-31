@@ -1,0 +1,2218 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation')" href="#testTable">
+<li>SQMD_SRP_447_TradeDateValidation</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission')" href="#testTable">
+<li>SQMD_SRP_451_QueueSubmissionInFinalSubmission</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission')" href="#testTable">
+<li>SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">3</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">3</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-04-09T07:17:14Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-04-09T07:29:56Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:55:09</p>
+</td><td class="cell1Css"><a href="SS/18040912550941619.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:20</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">7</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:55:25</p>
+</td><td class="cell1Css"><a href="SS/18040912552564243.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:26</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:55:36</p>
+</td><td class="cell1Css"><a href="SS/18040912553667965.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 726423</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:47</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendarForSecondDate method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:52</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:55:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:56:02</p>
+</td><td class="cell1Css"><a href="SS/18040912560286139.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendarForSecondDate method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:03</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:56:13</p>
+</td><td class="cell1Css"><a href="SS/1804091256139727.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 726425</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:24</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">31</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:56:34</p>
+</td><td class="cell1Css"><a href="SS/180409125634833.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:45</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">36</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:56:50</p>
+</td><td class="cell1Css"><a href="SS/18040912565098896.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>38</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:56:51</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">39</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:57:01</p>
+</td><td class="cell1Css"><a href="SS/18040912570132461.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>40</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:57:02</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:02</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">42</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:59:12</p>
+</td><td class="cell1Css"><a href="SS/18040912591266660.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>43</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>45</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>46</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendarForSecondDate method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:17</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>48</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:28</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">49</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:59:33</p>
+</td><td class="cell1Css"><a href="SS/18040912593349217.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendarForSecondDate</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendarForSecondDate method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:34</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>51</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:34</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">52</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:59:44</p>
+</td><td class="cell1Css"><a href="SS/18040912594446458.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>54</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>55</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>56</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> compareSubmissionsOfTwoDifferentDates</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>compareSubmissionsOfTwoDifferentDates method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:50</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">57</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> compareSubmissionsOfTwoDifferentDates</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">The two submission of different date done and are not queued.The current status of First Submission is: SUCCESS The current status of second submission is: SUCCESS</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:59:55</p>
+</td><td class="cell1Css"><a href="SS/1804091259556482.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionOfDifferentDateInFinalSubmission">
+<td class="cell1Css">
+<p>58</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> compareSubmissionsOfTwoDifferentDates</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>compareSubmissionsOfTwoDifferentDates method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:59:55</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:47:40</p>
+</td><td class="cell1Css"><a href="SS/18040912474026894.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:52</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">7</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:47:58</p>
+</td><td class="cell1Css"><a href="SS/1804091247583067.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:58</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:47:58</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:48:09</p>
+</td><td class="cell1Css"><a href="SS/18040912480923789.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:09</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>13</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:14</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 726419</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:20</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:20</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>16</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:20</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:20</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:25</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>19</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>info</p>
+</td><td class="cell1Css">
+<p>Date entered in date field</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:30</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date set in date field</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:48:36</p>
+</td><td class="cell1Css"><a href="SS/18040912483659330.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> enterDateandClickOnCalendar</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>enterDateandClickOnCalendar method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:36</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISO</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Submit To Caiso</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:48:47</p>
+</td><td class="cell1Css"><a href="SS/18040912484777158.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISO</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISO method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:47</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:52</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>27</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Get text</p>
+</td><td class="cell1Css">
+<p>Successfully retrieved submit id as: 726421</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:57</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> retrieveSubmitId</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>retrieveSubmitId method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>29</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> storeSubmitID</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>storeSubmitID method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>30</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:48:57</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">31</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:49:08</p>
+</td><td class="cell1Css"><a href="SS/18040912490895469.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>32</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:49:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>33</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:49:08</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>34</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:49:13</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>35</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:49:13</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>36</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:49:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>37</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> compareStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>compareStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:49:19</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">38</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> compareStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">Two Submission done.The current status of First Submission is: SENT The current status of second submission is: SEND</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:49:24</p>
+</td><td class="cell1Css"><a href="SS/18040912492439122.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>39</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:51:24</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">40</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:51:34</p>
+</td><td class="cell1Css"><a href="SS/18040912513426906.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>41</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:51:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>42</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:51:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>43</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:51:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>44</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:51:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>45</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:51:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">46</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> compareStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">The two submission of same date got queued.The current status of First Submission is: SUCCESS The current status of second submission is: SEND</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:51:45</p>
+</td><td class="cell1Css"><a href="SS/18040912514542858.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>47</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:53:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">48</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Get Status</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:53:56</p>
+</td><td class="cell1Css"><a href="SS/18040912535629822.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>49</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> clickOnGetStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>clickOnGetStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:53:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>50</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>fetchStatus method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:53:56</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>51</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> fetchStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>fetchStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:01</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p style="color: green;">52</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> compareStatus</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">After some time.The current status of First Submission is: SUCCESS The current status of second submission is: SUCCESS</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:54:01</p>
+</td><td class="cell1Css"><a href="SS/18040912540163126.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_451_QueueSubmissionInFinalSubmission">
+<td class="cell1Css">
+<p>53</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> compareStatus</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>compareStatus method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:02</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>1</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method Start</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:12</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p style="color: green;">2</p>
+</td><td class="cell1Css">
+<p style="color: green;">HomePage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Clicked On Desired Menu: Final Submission</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:54:18</p>
+</td><td class="cell1Css"><a href="SS/18040912541899256.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>HomePage</p>
+</td><td class="cell1Css">
+<p> ClickOnMenu</p>
+</td><td class="cell1Css">
+<p>Method End</p>
+</td><td class="cell1Css">
+<p>ClickOnMenu Method Ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:18</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>4</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DateNotBetweenT_48AndT_9</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>DateNotBetweenT_48AndT_9 method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:18</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DateNotBetweenT_48AndT_9</p>
+</td><td class="cell1Css">
+<p>Display</p>
+</td><td class="cell1Css">
+<p>Date Field is showing on screen</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:23</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p style="color: green;">6</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DateNotBetweenT_48AndT_9</p>
+</td><td class="cell1Css">
+<p style="color: green;">info</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date entered in date field but no submission can be done on this date.Showing Error message as Follows: Final submission status was retrieved successfully. Trade Date 04/05/2018 is not in the valid due trade date range. Final Submission to CAISO is not allowed.</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:54:34</p>
+</td><td class="cell1Css"><a href="SS/18040912543442049.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISOButtonDisabled</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>submitToCAISOButtonDisabled method starts</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:35</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p style="color: green;">8</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> submitToCAISOButtonDisabled</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Failed To Click On Submit to CAISO.The submission cannot be done as the date 04/05/2018 is not in range of T+48 and T+9.</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:54:40</p>
+</td><td class="cell1Css"><a href="SS/18040912544073598.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> submitToCAISOButtonDisabled</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>submitToCAISOButtonDisabled method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:41</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">FinalSubmission</p>
+</td><td class="cell1Css">
+<p style="color: green;"> DateNotBetweenT_48AndT_9</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verification</p>
+</td><td class="cell1Css">
+<p style="color: green;">Date not between Range T+48 and T+9 could not be entered or selected from Calendar.</p>
+</td><td class="cell1Css">
+<p style="color: green;">09-Apr,18 12:54:53</p>
+</td><td class="cell1Css"><a href="SS/18040912545353544.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.SQMD_SRP_447_TradeDateValidation">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>FinalSubmission</p>
+</td><td class="cell1Css">
+<p> DateNotBetweenT_48AndT_9</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>DateNotBetweenT_48AndT_9 method ends</p>
+</td><td class="cell1Css">
+<p>09-Apr,18 12:54:54</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>

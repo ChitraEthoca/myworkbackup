@@ -1,0 +1,716 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Report</title>
+<style type="text/css">
+.body {width: 100%;height: 100%;}
+.left {width: 20%;height: 100%;float: left;position:fixed;}
+.right {border-left: groove; width: 79%;height: 100%;float: right;display:table;}
+.upperLeft {height: 248px;}
+.lowerLeft {top: 30%;height: 70%;}
+#moduleList, #scriptList {font-weight: bold;list-style: none;}
+#moduleList:hover , #scriptList:hover , #Mods:hover{cursor: pointer;}
+#scriptList a {text-decoration: none !important}
+#testfail,#stestfail,#testpass,#stestpass {display:none;}
+table{margin-left:auto;margin-right:auto;font-size:90%;}
+td{margin:0px;border:1px solid #31708f;padding:1px;height:32px;border-radius:2px;}
+ul{display: table; width: 100%; table-layout: fixed;}
+#Mods{color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:1px}
+#Tests {color: White; text-align: center; background-color: #286090; border-radius: 3px; padding: 1px;margin-top:10px}
+li{background-color: #FFFFFF; padding: 2px; margin: 1px;  display: table; left: -38px; position: relative;}
+.tstTable tr[class^="displayClass"]{display:table-row;}
+.tstTable  tr[class^="hiddenClass"]{display:none;}
+.cell1Css {background:white; width :10%; text-align:center}
+.cell2Css {background:white; width :30%; text-align:center}
+.cell3Css {background:white; width :50%;text-align:center}
+.cell4Css {background:white; width :10%; text-align:center}
+.cell4CssRed {background:white; width :10%;text-align:center;color:red}
+.cell1hCss {background:#FFFF99; text-align:center;font-weight:bold;color:blue}
+td.cell2hCss {background:#FFFF99; text-align:center;color:blue}
+.hidden {display:none}
+.red{background-color:: red}
+.green{background-color:: green}
+</style>
+</head>
+<body>
+<div id="bodyDiv" class="body">
+<div class="left">
+<div class="upperLeft">
+<h2 id="Tests">Test Cases</h2>
+<ul id="scriptList">
+<a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc')" href="#testTable">
+<li style="color : red;">TC17_SQMD_SAIDRemoveFunc</li>
+</a><a onclick="deleteTableRowsAndRecreate('com.pge.COC.tests.TC20_CheckSAIDValidations')" href="#testTable">
+<li>TC20_CheckSAIDValidations</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="right">
+<table id="testSummary" align="center" width="550">
+<tr>
+<td style="color:white;font-size:17pt" bgcolor="#286090" colspan="2">
+<p>
+<center> Test Execution Summary</center>
+</p>
+</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Module Name</b></td><td align="center" id="stbl_total">Site Host Tool</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Environment</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Browser</b></td><td align="center" id="stbl_total"></td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Total Test cases Executed</b></td><td align="center" id="stbl_total">2</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Passed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Failed Test case(s)</b></td><td align="center" id="stbl_total">1</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Skipped Test case(s)</b></td><td align="center" id="stbl_total">0</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>Start Time</b></td><td align="center">2018-01-16T12:54:16Z</td>
+</tr>
+<tr>
+<td WIDTH="65%" bgcolor="#5bc0de"><b>End Time</b></td><td Style="Color:#264D73" align="center" id="stbl_endtime">2018-01-16T12:55:50Z</td>
+</tr>
+</table>
+<hr>
+<div class="testTableDiv hidden" id="testTableDivId">
+<table class="tstTable" id="testTable" align="center" width="1000">
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC17_SQMD_SAIDRemoveFunc</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: ClickServiceAgreementExclusionlink method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:32</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Service Agreement Exclusions link is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:33</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">4</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Service Agreement Exclusions link click done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:41</p>
+</td><td class="cell1Css"><a href="SS/18011618244183991.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: ClickServiceAgreementExclusionlink method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>6</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifyRetrievedMessage</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: verifyRetriveMessage method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">7</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifyRetrievedMessage</p>
+</td><td class="cell1Css">
+<p style="color: green;">verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">'Exclusions were retrieved successfully.' message is displayed.</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:42</p>
+</td><td class="cell1Css"><a href="SS/18011618244231872.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifyRetrievedMessage</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: verifyRetriveMessage method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> EnterSAID</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: EnterSAID method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:42</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">10</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> EnterSAID</p>
+</td><td class="cell1Css">
+<p style="color: green;">verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">SAID Text Box is available and SAID entered successfully as 1824421824</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:42</p>
+</td><td class="cell1Css"><a href="SS/18011618244234217.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>11</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> EnterSAID</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: EnterSAID method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>12</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> enterComments</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: EnterComments method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:43</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">13</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> enterComments</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">Comments text Box is available and Comment entered successfully as Add SAID</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:43</p>
+</td><td class="cell1Css"><a href="SS/18011618244368817.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>14</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> enterComments</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: EnterComments method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>15</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickAddButton</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: clickAddButton method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">16</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickAddButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Add Button is clicked successfully.</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:44</p>
+</td><td class="cell1Css"><a href="SS/18011618244456330.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>17</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickAddButton</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: clickAddButton method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>18</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifySAIDAddLastRowBeforeSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: verifySAIDAddLastRowBeforeSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:44</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">19</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifySAIDAddLastRowBeforeSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">SAID is availale</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:44</p>
+</td><td class="cell1Css"><a href="SS/18011618244410240.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">20</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifySAIDAddLastRowBeforeSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">SAID is added in last row as: 1824421824</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:45</p>
+</td><td class="cell1Css"><a href="SS/18011618244599948.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>21</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifySAIDAddLastRowBeforeSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: verifySAIDAddLastRowBeforeSave method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>22</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickSaveButton</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: clickSaveButton method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:45</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">23</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> clickSaveButton</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Save Button is available and clicked successfully.</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:45</p>
+</td><td class="cell1Css"><a href="SS/1801161824453894.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>24</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickSaveButton</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: clickSaveButton method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>25</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifySAIDAddedFirstRowAfterSave</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: verifySAIDAddedFirstRowAfterSave method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>26</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifySAIDAddedFirstRowAfterSave</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>SAID is available.</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:46</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p style="color: green;">27</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> verifySAIDAddedFirstRowAfterSave</p>
+</td><td class="cell1Css">
+<p style="color: green;">Verify</p>
+</td><td class="cell1Css">
+<p style="color: green;">SAID is added in first row as: 1824421824</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:24:46</p>
+</td><td class="cell1Css"><a href="SS/18011618244632681.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc">
+<td class="cell1Css">
+<p>28</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> verifySAIDAddedFirstRowAfterSave</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: verifySAIDAddedFirstRowAfterSave method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:24:46</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC17_SQMD_SAIDRemoveFunc"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="tableHeader" style="color:white;font-size:17pt" bgcolor="#286090" colspan="7">
+<p>
+<center> Test Case Name : TC20_CheckSAIDValidations</center>
+</p>
+</td>
+</tr>
+<tr class="tableHeading testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td align="center" WIDTH="5%" bgcolor="#5bc0de"><b>Sl. No.</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Class</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Method</b></td><td align="center" WIDTH="15%" bgcolor="#5bc0de"><b>Action Performmed</b></td><td align="center" WIDTH="30%" bgcolor="#5bc0de"><b>Step Detail</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Date Time</b></td><td align="center" WIDTH="10%" bgcolor="#5bc0de"><b>Status</b></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p>2</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: ClickServiceAgreementExclusionlink method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:25:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p>3</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p>Verify</p>
+</td><td class="cell1Css">
+<p>Service Agreement Exclusions link is showing on screen</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:25:07</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p style="color: green;">4</p>
+</td><td class="cell1Css">
+<p style="color: green;">ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p style="color: green;"> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p style="color: green;">Click</p>
+</td><td class="cell1Css">
+<p style="color: green;">Service Agreement Exclusions link click done successfully</p>
+</td><td class="cell1Css">
+<p style="color: green;">16-Jan,18 18:25:16</p>
+</td><td class="cell1Css"><a href="SS/18011618251686090.png">
+<p style="color : green;">PASS</p>
+</a></td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p>5</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> ClickServiceAgreementExclusionlink</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: ClickServiceAgreementExclusionlink method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:25:16</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations"></tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p>7</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickRefreshButton</p>
+</td><td class="cell1Css">
+<p>Method Starts</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: clickRefreshButton method starts</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:25:25</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p>8</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickRefreshButton</p>
+</td><td class="cell1Css">
+<p>Click</p>
+</td><td class="cell1Css">
+<p>Refresh Button is available and clicked successfully.</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:25:40</p>
+</td><td class="cell1Css">
+<p>DONE</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations">
+<td class="cell1Css">
+<p>9</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage</p>
+</td><td class="cell1Css">
+<p> clickRefreshButton</p>
+</td><td class="cell1Css">
+<p>Method Ends</p>
+</td><td class="cell1Css">
+<p>ServiceAgreementExclusionsPage: clickRefreshButton method ends</p>
+</td><td class="cell1Css">
+<p>16-Jan,18 18:25:40</p>
+</td><td class="cell1Css">
+<p>INFO</p>
+</td>
+</tr>
+<tr class="testRow hidden" data-id="com.pge.COC.tests.TC20_CheckSAIDValidations"></tr>
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	function deleteTableRowsAndRecreate(testCaseName){
+	var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var allRows = document.querySelectorAll("#testTable tr.testRow");
+	//var allRows = document.getElementById("testTable").getElementsByClassName("testRow");
+		for(i=0;i<allRows.length;i++){
+			allRows[i].style.display='none';
+		}
+		var testTableDiv = document.getElementById('testTableDivId');
+	testTableDiv.className = 'testTableDiv';
+	var selectedRows = document.querySelectorAll("#testTable tr.testRow[data-id='"+testCaseName+"']");
+	//var selectedRows = document.getElementById("testTable").getElementsByClassName("testRow").getElementsByAttribute("data-id", testCaseName);
+		for(i=0;i<selectedRows.length;i++){
+			selectedRows[i].style.display='table-row';
+		}
+	}
+</script>
+</body>
+</html>
